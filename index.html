@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Clicker</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.1.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- SECTION header -->
+    <!-- <header class="container-fluid bg-success">
+        <h1>Fish Clicker</h1>
+    </header> -->
+    <!-- SECTION Fish clicker-->
+    <main class="container-fluid">
+        <section class="row m-5">
+            <div class="col-12 text-center">
+                <img class="" onclick="hook()"
+                    src="https://opengameart.org/sites/default/files/styles/medium/public/test_16.png" alt="Fish">
+            </div>
+        </section>
+        <section class="row net px-3 py-5">
+
+            <!-- SECTION amount of fish -->
+            <div class="col-12 text-center">
+                <h2>Fish <span id="totalFish">0</span></h2>
+            </div>
+            <div class="col-12 text-center">
+                <h4>Click Count <span id="CC">0</span></h4>
+                <h4>Auto Count <span id="AC">0</span></h4>
+            </div>
+            <div class="col-6 text-center">
+                <section class="row">
+
+                    <!-- SECTION click upgrades-->
+                    <div class="col-6">
+                        <h5>Click Upgrades</h5>
+                        <button id="pole" onclick="buySupplies('pole')" class="btn btn-danger">5</button>
+                        <p>pole +1</p>
+                        <button id="net" onclick="buySupplies('net')" class="btn btn-danger">10</button>
+                        <p>net +5</p>
+                    </div>
+                    <!-- SECTION auto upgrades -->
+                    <div class="col-6">
+                        <h5> Auto Upgrades</h5>
+                        <button id="boat" onclick="buyAutoUpgrades('boat')" class="btn btn-danger">50</button>
+                        <p>boat +25 / 3s</p>
+                        <button id="ship" onclick="buyAutoUpgrades('ship')" class="btn btn-danger">100</button>
+                        <p>ship +200 / 3s</p>
+                    </div>
+                </section>
+            </div>
+            <div class="col-6 text-center">
+                <!-- SECTION click stats -->
+                <section class="row">
+                    <div id="clickStat" class="col-6">
+                        <h5>Click Stats</h5>
+                        <div id="cStats">
+
+                        </div>
+                    </div>
+                    <!-- SECTION auto stats -->
+                    <div class="col-6">
+                        <h5>Auto Stats</h5>
+                        <div id="aStats">
+                            <p>0</p>
+                            <p>boats</p>
+                            <p>0</p>
+                        </div>
+                    </div>
+                </section>
+        </section>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

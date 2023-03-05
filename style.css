@@ -1,0 +1,18 @@
+body {
+
+    background-image: url(https://images.unsplash.com/photo-1464925257126-6450e871c667?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+    background-position: center;
+    background-size: cover;
+}
+
+.net {
+    background-image: url(https://th.bing.com/th/id/R.237f23b694ddcf9e93b323b9c9530999?rik=hPXeC6GrV3nwUg&riu=http%3a%2f%2fclipart-library.com%2fimg%2f937517.png&ehk=rPsRrJ69kmu6pKWnEhLhKALrIlI628yDRNzccpxN7Z4%3d&risl=1&pid=ImgRaw&r=0);
+    background-position: center;
+    background-size: cover;
+    margin: 6em;
+}
+
+
+img {
+    cursor: grab;
+}
