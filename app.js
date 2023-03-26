@@ -108,11 +108,11 @@ function buyAutoUpgrades(name) {
         auto.quantity++
         fish -= auto.price
         auto.price *= 2
-        addFish()
+        console.log('[AUTO PRICE]', auto.price);
     }
+    updateAutoStats()
     addAutoPrice(name)
     updateFish()
-    updateAutoStats()
 }
 
 
@@ -121,6 +121,7 @@ function addFish() {
     autoUpgrades.forEach(a => {
         fish += (a.quantity * a.multiplier)
         total += (a.quantity * a.multiplier)
+        console.log(fish, total)
     })
     updateFish()
     document.getElementById('AC').innerText = total
@@ -140,4 +141,4 @@ function addAutoPrice(name) {
 
 
 
-setInterval(addFish, 3000)
+setInterval(addFish, 2000)
