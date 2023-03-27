@@ -1,4 +1,4 @@
-let fish = 0;
+let fish = Math.round(0)
 let click = 1
 
 let clickUpgrades = [
@@ -46,6 +46,7 @@ function hook() {
 }
 
 function updateFish() {
+    Math.round(fish)
     let fishElem = document.getElementById('totalFish')
     fishElem.innerText = fish
 }
@@ -59,7 +60,8 @@ function buySupplies(name) {
             click += (cu.quantity * cu.multiplier)
         })
         fish -= supply.price
-        supply.price *= 2
+        supply.price *= 1.3
+        supply.price = Math.round(supply.price)
         console.log(supply.price);
     }
     addPrice(name)
@@ -107,7 +109,8 @@ function buyAutoUpgrades(name) {
     if (fish >= auto.price) {
         auto.quantity++
         fish -= auto.price
-        auto.price *= 2
+        auto.price *= 1.3
+        auto.price = Math.round(auto.price)
         console.log('[AUTO PRICE]', auto.price);
     }
     updateAutoStats()
@@ -130,6 +133,7 @@ function addFish() {
 function addPrice(name) {
     // let total = 0
     let click = clickUpgrades.find(c => c.name == name)
+
     // total += click.price
     document.getElementById(name).innerText = click.price
 }
