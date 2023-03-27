@@ -141,4 +141,4 @@ function addAutoPrice(name) {
 
 
 
-setInterval(addFish, 2000)
+setInterval(addFish, 1000)

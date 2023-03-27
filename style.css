@@ -11,6 +11,8 @@ body {
     background-position: center;
     background-size: cover;
     margin: 6em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 
@@ -18,4 +20,11 @@ img {
     cursor: grab;
 }
 
-@media {}
+@media (max-width: 768px) {
+
+    .net {
+        margin: 0;
+        padding-top: 6em;
+        padding-bottom: 4em;
+    }
+}
